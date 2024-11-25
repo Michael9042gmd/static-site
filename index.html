@@ -2,18 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>?</title>
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="style (1).css">
 </head>
 <body>
     <div class="container">
-        <div class="tenor-gif-embed" data-postid="18960681" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/hot-cherry-cereza-movie-time-popcorn-gif-18960681">Hot Cherry Cereza GIF</a>from <a href="https://tenor.com/search/hot+cherry-gifs">Hot Cherry GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        <h1>¿Te gustaria ver una pelicula conmigo?</h1>
-        <div class="btn">
-            <a href="si.html">SI</a>
-            <a href="no1.html">NO</a>
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para la dueña de mi vida.💞💞</strong>
+                        <p>
+                            ¿Quieres ir conmigo al cine a ver Moana 2 ?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
         </div>
     </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
